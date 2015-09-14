@@ -5,7 +5,7 @@ input file :
 	then there will be four lins for each student
 	first line an integer = roll
 	second line a string = name
-	third line = standard
+	third line an integer = standard
 	fourth line contain a sequence of numbers separated by spaces representing scores
 	on five subjects
 	
