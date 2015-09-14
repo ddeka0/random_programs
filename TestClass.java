@@ -1,3 +1,60 @@
+/*
+Debashish Deka 14/09/2015
+input file :
+	first line contain an integer N = no of students
+	then there will be four lins for each student
+	first line an integer = roll
+	second line a string = name
+	third line = standard
+	fourth line contain a sequence of numbers separated by spaces representing scores
+	on five subjects
+	
+	example infile:
+	
+	3
+	1
+	Debashish
+	11
+	12 21 10 17 18
+	2
+	Nikhil
+	10
+	19 10 16 10 11
+	3
+	Ankit
+	11
+	21 23 10 11 10
+	
+	compile and execution:
+	javac TestClass.java
+	java TestClass < infile
+
+	console output:
+	
+	Name : Debashish
+	Roll No : 1
+	Standard : 11
+	12 21 10 17 18 
+	--------------------------
+	Name : Nikhil
+	Roll No : 2
+	Standard : 10
+	19 10 16 10 11 
+	--------------------------
+	Name : Ankit
+	Roll No : 3
+	Standard : 11
+	21 23 10 11 10 
+	--------------------------
+	Max Mark in 1 subject is 21 by Ankit
+	Max Mark in 2 subject is 23 by Ankit
+	Max Mark in 3 subject is 16 by Nikhil
+	Max Mark in 4 subject is 17 by Debashish
+	Max Mark in 5 subject is 18 by Debashish
+
+
+*/
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
