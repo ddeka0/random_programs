@@ -51,8 +51,6 @@ input file :
 	Max Mark in 3 subject is 16 by Nikhil
 	Max Mark in 4 subject is 17 by Debashish
 	Max Mark in 5 subject is 18 by Debashish
-
-
 */
 
 import java.io.BufferedReader;
