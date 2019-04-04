@@ -45,7 +45,7 @@ public:
 void executeEvent(const Event &event) {
 	auto targetNode = event.targetNode;
 	string msgToDeliver = event.msgToDeliver;
-	cout <<"Message received at "<<targetNode->nodeId << endl;
+	cout <<"Message received at "<<targetNode->nodeId <<"["<<msgToDeliver<<"]"<< endl;
 	targetNode->sendMsgToPeer(event.eventTime,msgToDeliver);
 }
 int main() {
