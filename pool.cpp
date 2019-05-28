@@ -138,4 +138,27 @@ int main() {
 	
 	getchar();
 	cout <<":::::::::::::::::<<ends>>:::::::::::::::::"<<endl<<endl;
+	
+	cout <<"::::::::::::::::::TEST 3::::::::::::::::::"<<endl;
+	
+	auto g = [](std::string x) {
+		cout<<x;
+		return std::string(" World!");
+	};
+
+	pplx::task_from_result<std::string>("Hello")
+	.then([g](std::string x)
+	{	
+		auto ret = g(x);
+		return ret;
+	})
+	.then([](pplx::task<std::string> prevTask)
+	{
+		cout << prevTask.get() <<endl;
+
+	}).wait();
+	
+	cout <<":::::::::::::::::<<ends>>:::::::::::::::::"<<endl<<endl;
+	
+	
 }
