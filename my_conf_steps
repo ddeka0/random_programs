@@ -1,0 +1,14 @@
+install zsh
+install oh my zsh
+install p10k (make sure to all needed fonts in your host machine)
+insall fzf
+
+
+❯ cat ~/.tmux.conf
+set -g default-terminal "xterm-256color"
+set-option -ga terminal-overrides ",xterm-256color:Tc"
+
+// Oh my zsh
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+
+
