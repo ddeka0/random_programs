@@ -12,3 +12,17 @@ set-option -ga terminal-overrides ",xterm-256color:Tc"
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 
+//steps to export cmd history to new machine
+
+// run on old machine
+history > history.txt
+
+vim history.txt & run :%s/^\s*\d\+\s*//g
+
+scp history.txt user_name@IP:/tmp
+
+// On new machine
+
+history -r /tmp/history.txt
+
+// if you are using zsh shell, them simply copy zsh history file from prev machine to new machine
