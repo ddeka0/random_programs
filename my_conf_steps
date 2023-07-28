@@ -3,6 +3,8 @@ install oh my zsh
 install p10k (make sure to all needed fonts in your host machine)
 insall fzf
 
+Note: If brew does not get recognized in zsh, please add export PATH=/opt/homebrew/bin:$PATH at the end of .zshrc and run exec zsh once
+
 
 ❯ cat ~/.tmux.conf
 set -g default-terminal "xterm-256color"
