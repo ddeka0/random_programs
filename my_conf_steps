@@ -28,3 +28,44 @@ scp history.txt user_name@IP:/tmp
 history -r /tmp/history.txt
 
 // if you are using zsh shell, them simply copy zsh history file from prev machine to new machine
+------------------
+~/.config/nvim/init.vim
+
+:set number
+:set autoindent
+:set tabstop=4
+:set shiftwidth=3
+:set smarttab
+:set softtabstop=4
+:set mouse=a
+:set expandtab
+:highlight ExtraWhitespace ctermbg=red guibg=red
+:match ExtraWhitespace /\s\+$/
+
+call plug#begin()
+
+Plug 'vim-airline/vim-airline'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'bryanmylee/vim-colorscheme-icons'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'Yggdroot/indentLine'
+
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.2' }
+Plug 'edkolev/tmuxline.vim'
+
+Plug 'EdenEast/nightfox.nvim'
+Plug 'mhinz/vim-startify'
+
+call plug#end()
+
+set tags+=/path1
+set tags+=/path2
+
+nnoremap <C-s> :vert tag <C-R>=expand('<cword>')<CR><CR>
+
+------------------
