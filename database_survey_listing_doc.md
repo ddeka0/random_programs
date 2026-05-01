@@ -2,8 +2,7 @@
 
 > Structure: top-down — first **why** databases exist (problem space, data classes, use cases),
 > then **what** kinds were built, then **how** they are built (architecture, storage, workflows),
-> then **trade-offs**, then **research** of the last ~15 years, then **what is coming next**, and
-> finally a **pedagogical and research onramp** for the professor.
+> then **trade-offs**, then **research** of the last ~15 years, then **what is coming next**
 
 ---
 
@@ -538,7 +537,7 @@ Frame as: signal → driver → likely 3–5 year direction.
 
 ---
 
-## 13. Research Directions Worth Pursuing (for the Professor)
+## 13. Research Directions Worth Pursuing
 
 - **AI × DB**: learned cardinality and optimization that are robust to drift; LLM-driven schema design and query rewriting; embedding-aware storage.
 - **Hardware × DB**: CXL-attached memory, computational storage, DPUs, NVMe-oF, GPU ANN at scale.
