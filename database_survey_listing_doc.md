@@ -1,4 +1,4 @@
-# Databases — A Comprehensive Report Outline (for Undergrad Course + Research Onramp)
+# Databases — A Comprehensive Report Outline
 
 > Structure: top-down — first **why** databases exist (problem space, data classes, use cases),
 > then **what** kinds were built, then **how** they are built (architecture, storage, workflows),
