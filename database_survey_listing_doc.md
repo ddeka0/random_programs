@@ -4,9 +4,6 @@
 > then **what** kinds were built, then **how** they are built (architecture, storage, workflows),
 > then **trade-offs**, then **research** of the last ~15 years, then **what is coming next**, and
 > finally a **pedagogical and research onramp** for the professor.
->
-> This file is an outline only. Each bullet is meant to be expanded by an LLM (or by hand) into
-> 1–3 paragraphs with concrete examples, diagrams, and references. Aim for ~10–20 pages overall.
 
 ---
 
